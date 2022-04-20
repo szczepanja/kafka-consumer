@@ -7,9 +7,11 @@ object KafkaConsumer extends App {
   props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer")
   props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer")
   props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
-  props.put(ConsumerConfig.GROUP_ID_CONFIG, "ANDZIA")
+  props.put(ConsumerConfig.GROUP_ID_CONFIG, "ID123")
 
   val consumer = new KafkaConsumer[String, String](props)
+
+  //REMEMBER
 
   import scala.jdk.CollectionConverters._
 
